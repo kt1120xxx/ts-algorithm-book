@@ -1,5 +1,6 @@
 import { ArrayUtil } from './utils/arrayUtil';
 // 使用したいtsファイルをimportする
+import { kawamura } from './utils/kawamura';
 import { sort } from './utils/sort';
 
 console.log(ArrayUtil.is([]));
@@ -47,6 +48,8 @@ function start(){
     // array = getRandomArray({min:0,length:100});
 
     // ↓sort classのバブルソートメソッドに乱数配列を渡して、結果を返す
+    // ↓kawamura classのバブルソートメソッドに乱数配列を渡して、結果を返す
+    // return kawamura.bubbleSort(getRandomArray({min:0,length:5}));
     // ↓バブルソート
     // return sort.bubbleSort(getRandomArray({min:0,length:10}));
 
