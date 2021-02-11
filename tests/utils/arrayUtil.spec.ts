@@ -1,4 +1,6 @@
 import { ArrayUtil } from '@/utils/arrayUtil';
+import { kawamura } from '@/utils/kawamura';
+import { bubbleSort } from '@/utils/sort';
 
 const testArray = ['dog','dog','cat'];
 const testUniqueArray = ['dog','cat','bird'];
