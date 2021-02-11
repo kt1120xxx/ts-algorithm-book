@@ -34,4 +34,3 @@ export class sort {
         return array;
     }
 }
-// commitテスト
