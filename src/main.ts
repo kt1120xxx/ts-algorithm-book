@@ -1,6 +1,6 @@
 import { ArrayUtil } from './utils/arrayUtil';
 // 使用したいtsファイルをimportする
-import { sort } from './utils/sort';
+import { Sort } from './utils/sort';
 
 console.log(ArrayUtil.is([]));
 
@@ -46,12 +46,15 @@ function start(){
     // ↓globalで配列を作成したものを受け取る際に必要
     // array = getRandomArray({min:0,length:100});
 
-    // ↓sort classのバブルソートメソッドに乱数配列を渡して、結果を返す
+    // ↓Sort classのバブルソートメソッドに乱数配列を渡して、結果を返す
     // ↓バブルソート
-    // return sort.bubbleSort(getRandomArray({min:0,length:10}));
+    // return Sort.bubbleSort(getRandomArray({min:0,length:10}));
 
     // 選択ソート
-    return sort.selectSort(getRandomArray({min:0,length:5}));
+    // return Sort.selectSort2(getRandomArray({min:0,length:5}));
+
+    // 挿入ソート
+    return Sort.insertSort(getRandomArray({min:0,length:5}));
 }
 
 // メソッド呼び出し
